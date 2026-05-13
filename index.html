@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Titanic Survival AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+</head>
+<body>
+
+    <main>
+        <header>
+            <img src="img/logo.png" alt="titanic-logo" class="logo">
+            <h1>Titanic Survival AI</h1>
+        </header>
+
+        <div class="model-container">
+            <img class="titanik-gif" src="img/a-night-to-remember-movie-a-night-to-remember.gif" alt="titanik-img">
+            <button id="trainButton">Train Model</button>
+            <input type="number" id="ageInput" placeholder="Enter your age">
+            <select name="sex" id="sexSelect">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <select name="pclass" id="pclassSelect">
+                <option value="">Select Class</option>
+                <option value="1">1st Class</option>
+                <option value="2">2nd Class</option>
+                <option value="3">3rd Class</option>
+            </select>
+
+            <button id="predictButton">Predict</button>
+            <div class="prediction-result">
+                <h2>Prediction Result:</h2>
+                <p id="predictionResult"></p>
+            </div>
+
+        </div>
+
+    </main>>
+
+    <script src="main.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,108 @@
+*{
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 48);
+    height: 100svh;
+    margin: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    margin-bottom: 0px;
+
+}
+.logo{
+    width:80px;
+}
+.titanik-gif {
+    width: 100%;
+    border-radius:10px
+
+}
+.model-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: #dbdbee;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #4441f5;
+    color: white;
+    transition: background-color 0.3s;
+}
+button:hover:not(:disabled) {
+    background-color: #0e2b61;
+}
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+.titanic-img{
+    width: 100%;
+    height: auto;
+}
+#predictButton {
+    display: none;
+}
+
+.prediction-result {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: 2px solid #040f41;
+    border-radius: 10px;
+    background-color: #dbdbee;
+    box-sizing: border-box;
+    display: none;
+}
+.prediction-result h2 {
+    margin-top: 0;
+    color: #060427;
+}
+.prediction-result p {
+    font-size: 20px;
+    color: #221b80;
+    font-weight: bold;
+    margin: 0;
+}
